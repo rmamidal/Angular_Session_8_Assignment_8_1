@@ -23,6 +23,7 @@ export class UserComponent {
  
   addUser() {
      this._userData.addUserData(this.currentUser);
+     this.currentUser = new UserClass(); // Clear fields once user created.
   }
   
 }

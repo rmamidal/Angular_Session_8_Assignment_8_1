@@ -10,15 +10,10 @@ export class UserData {
 
     // Get user data.
     getUserData() {
-     return this.userList =[
-            {firstName: "Rajendhar", lastName: "Mamidala"},
-            {firstName: "Padma", lastName: "Mamidala"},
-            {firstName: "Ashok", lastName: "Mamidala"},
-            {firstName: "Narsaiah", lastName: "Mamidala"}
-            ]
+     return this.userList =[]
     }
     // Add user data.
     addUserData(userDetail: UserClass) {
-        this.userList.unshift(userDetail);
+        this.userList.push(userDetail);
     }
 }
