@@ -14,6 +14,6 @@ export class UserData {
     }
     // Add user data.
     addUserData(userDetail: UserClass) {
-        this.userList.push(userDetail);
+        this.userList.unshift(userDetail);
     }
 }
